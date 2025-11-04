@@ -6,18 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRUD actions</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>CRUD "PGPD</h1>
+    <h1>CRUD "POGEPUDE"</h1>
     <form id="user-form">
-        <input type="text" placeholder="Juser nejm" required /> 
-        <input type="email" placeholder="i-mejl" required />
-        <input type="password" placeholder="Päswörd" required />
-        <button type="submit">Create user!</button> 
+        <input name= "username" type="text" placeholder="Juser nejm" required />  
+        <input name= "email" type="email" placeholder="i-mejl" required />
+        <input name= "password" type="password" placeholder="Päswörd" required />
+        <br>
+        <button type="submit">Kriejt juser!</button> 
     </form>
-        <ul id="item-list"></ul>
+
+    <h2>Update Juser</h2>
+    <form id="update-form">
+    <input type="text" id="update-id" placeholder="User ID" required />
+    <input type="text" id="update-username" placeholder="New username" />
+    <input type="email" id="update-email" placeholder="New email" />
+    <input type="password" id="update-password" placeholder="New password" />
+    <br>
+    <button type="submit">Updäte juser!</button>
+    </form>
+
+    <br>
+    <button id="fetch-users-butt">Fätsch jusers!</button>
+    
+    <div class="userlist-container">
+        <ul id="user-list"></ul>
+    </div>
+    
+    
 </body>
 
 <script type="module" src="script.js"></script>
 </html>
+
+<style>
+    
+    #fetch-users-butt{
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .userlist-container{
+        width: 50%;
+        border: solid black;
+    }
+</style>

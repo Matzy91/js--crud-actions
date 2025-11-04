@@ -1,0 +1,62 @@
+
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: lime;
+    text-transform: uppercase;
+    cursor: crosshair;
+    margin: 40px;
+    overflow-x: hidden;
+}
+
+button {
+    background-color: lime;
+    color: black;
+    font-family: "Tiny5", sans-serif;
+    text-transform: uppercase;
+    padding: 4px;
+    font-size: 24px;
+    margin: 10px 10px 10px 0px;
+    &:hover {
+        background-color: black;
+        color: lime;
+        cursor: pointer;
+    }
+}
+
+input {
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    margin: 5px;
+    &:hover {
+        background-color: red;
+        color: white;
+        cursor: crosshair;
+    }
+}
+
+li {
+    border-style: dotted;
+    margin: 5px;
+    padding: 25px;
+    list-style-type: none;
+}
+
+h1 {
+    animation-name: hackerVibe;
+    animation-duration: 20s;
+    position: relative;
+    display: flex;
+}
+
+@keyframes hackerVibe {
+    from {right: 0px;}
+    to {right: -1400px}
+}
+
+#fetch-users-butt {
+    float: right;
+}
